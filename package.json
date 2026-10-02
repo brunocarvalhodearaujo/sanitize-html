@@ -9,7 +9,7 @@
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
   "scripts": {
-    "test": "jest",
+    "test": "jest --runInBand --no-cache --forceExit --coverage",
     "build": "tsc"
   },
   "devDependencies": {
