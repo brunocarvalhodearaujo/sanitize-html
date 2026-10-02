@@ -1,0 +1,83 @@
+{
+  "name": "@brunocarvalho/sanitize-html",
+  "version": "1.0.0",
+  "description": "",
+  "author": "Bruno Carvalho de Araujo <brunocarvalhodearaujo@gmail.com>",
+  "keywords": [],
+  "license": "ISC",
+  "type": "commonjs",
+  "main": "dist/index.js",
+  "typings": "dist/index.d.ts",
+  "scripts": {
+    "test": "jest",
+    "build": "tsc"
+  },
+  "devDependencies": {
+    "@jest/globals": "^30.5.2",
+    "@types/jest": "^30.0.0",
+    "@types/node": "^26.6.3",
+    "jest": "^30.5.2",
+    "jest-junit": "^17.0.0",
+    "ts-jest": "^29.4.14",
+    "typescript": "^5.9.3"
+  },
+  "dependencies": {
+    "deepmerge": "^4.3.1",
+    "escape-string-regexp": "^5.0.0",
+    "htmlparser2": "^12.0.0",
+    "is-plain-object": "^5.1.0",
+    "launder": "^1.7.2",
+    "parse-srcset": "^1.0.2",
+    "postcss": "^8.5.28"
+  },
+  "jest": {
+    "resetMocks": true,
+    "clearMocks": true,
+    "verbose": true,
+    "testTimeout": 30000,
+    "preset": "ts-jest",
+    "testEnvironment": "node",
+    "coverageReporters": [
+      "text-summary",
+      "lcov",
+      "cobertura"
+    ],
+    "reporters": [
+      "default",
+      "jest-junit"
+    ],
+    "collectCoverage": true,
+    "collectCoverageFrom": [
+      "src/**/*.{ts,js}",
+      "!src/**/*.{test,spec}.{ts,js}"
+    ],
+    "modulePathIgnorePatterns": [
+      "<rootDir>/dist"
+    ],
+    "testRegex": "(test|src|__test__)/.*\\.(spec|test)\\.(js|ts)$",
+    "transformIgnorePatterns": [
+      "/node_modules/(?!(?:htmlparser2|escape-string-regexp|entities|domhandler|domutils|domelementtype|dom-serializer)/)"
+    ],
+    "transform": {
+      "^.+\\.(ts|tsx)$": [
+        "ts-jest",
+        {}
+      ],
+      "^.+\\.(js|jsx|mjs)$": [
+        "ts-jest",
+        {
+          "isolatedModules": true,
+          "useESM": false
+        }
+      ]
+    },
+    "coverageThreshold": {
+      "global": {
+        "statements": 0,
+        "branches": 0,
+        "functions": 0,
+        "lines": 0
+      }
+    }
+  }
+}

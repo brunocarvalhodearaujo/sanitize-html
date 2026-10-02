@@ -1,0 +1,9 @@
+node_modules/
+dist/
+lambda/
+storage/
+.env
+junit.xml
+coverage/
+.DS_Store
+.terraform
