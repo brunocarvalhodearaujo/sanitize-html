@@ -3,6 +3,10 @@
   "version": "1.0.2",
   "description": "",
   "author": "Bruno Carvalho de Araujo <brunocarvalhodearaujo@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/brunocarvalhodearaujo/sanitize-html.git"
+  },
   "keywords": [],
   "license": "ISC",
   "type": "commonjs",
