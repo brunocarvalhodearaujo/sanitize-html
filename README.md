@@ -1,5 +1,9 @@
 # sanitize-html
 
+[![npm version](https://img.shields.io/npm/v/@brunocarvalho/sanitize-html.svg)](https://www.npmjs.com/package/@brunocarvalho/sanitize-html)
+[![npm downloads](https://img.shields.io/npm/dt/@brunocarvalho/sanitize-html.svg)](https://www.npmjs.com/package/@brunocarvalho/sanitize-html)
+[![License](https://img.shields.io/npm/l/@brunocarvalho/sanitize-html.svg)](LICENSE)
+
 Sanitizador de HTML contra XSS escrito em TypeScript.
 
 Analisa uma string (ou número) HTML, remove tags e atributos perigosos e
